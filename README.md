@@ -14,4 +14,4 @@ Hochladen:
 Herunterladen:
 1. : (sudo) git pull -f origin master
 2. : bei "error: Pulling is not possible because you have unmerged files."
-     -> git merge --abort
+     -> (sudo)git merge --abort
