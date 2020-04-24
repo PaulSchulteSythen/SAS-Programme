@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=MuellSammeln
+comment1.params=
+comment1.target=MuellSammeln()
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ MuellSammeln\r\n
+comment2.params=
+comment2.target=void\ konstruiereRoboter()
+comment2.text=\ \r\n\ Erstellt\ und\ zeichnet\ das\ Roboter-Objekt\ als\ Sprite\r\n
+comment3.params=
+comment3.target=void\ verteileMuell()
+comment3.text=\ \r\n\ Erstellt\ und\ zeichnet\ die\ M\u00FCllobjekte\ als\ Rechtecke\ \r\n
+comment4.params=
+comment4.target=void\ sammleMuell()
+comment4.text=\r\n\ der\ Roboter\ entfernt\ die\ f\u00FCnf\ M\u00FCllteile\r\n
+numComments=5

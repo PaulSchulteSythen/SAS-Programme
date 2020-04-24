@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=BewegteVierecke
+comment1.params=
+comment1.target=BewegteVierecke()
+comment2.params=
+comment2.target=void\ main()
+comment3.params=
+comment3.target=void\ drehe()
+comment3.text=\r\n\ Dreht\ das\ schwarze\ Viereck\ um\ 10\ Grad\ nach\ rechts\ und\ das\ rote\ Quadrat\ um\ 10\ Grad\r\n\ nach\ links.\ Drehpunkt\ ist\ jeweils\ der\ Mittelpunkt\ der\ Shapes-Objekte.\r\n
+comment4.params=
+comment4.target=void\ skaliere()
+comment5.params=
+comment5.target=void\ transformiere()
+numComments=6
