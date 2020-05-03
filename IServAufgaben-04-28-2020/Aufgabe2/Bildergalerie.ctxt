@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Bildergalerie
+comment1.params=
+comment1.target=Bildergalerie()
+comment2.params=x\ y\ breite\ hoehe\ rahmenBreite\ rahmenFarbe
+comment2.target=void\ zeichneRahmen(int,\ int,\ int,\ int,\ int,\ java.awt.Color)
+numComments=3

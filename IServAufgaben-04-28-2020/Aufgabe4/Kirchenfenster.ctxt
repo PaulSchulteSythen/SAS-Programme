@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Kirchenfenster
+comment1.params=
+comment1.target=Kirchenfenster()
+comment2.params=anfangX\ anfangY\ color
+comment2.target=void\ figur(int,\ int,\ java.awt.Color)
+numComments=3

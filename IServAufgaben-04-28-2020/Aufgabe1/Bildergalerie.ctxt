@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Bildergalerie
+comment1.params=
+comment1.target=Bildergalerie()
+comment2.params=
+comment2.target=void\ quadrat()
+comment3.params=
+comment3.target=void\ kreuz()
+comment4.params=x\ y
+comment4.target=void\ kreis(int,\ int)
+comment5.params=x\ y\ breite\ hoehe
+comment5.target=void\ zeichneRahmen(int,\ int,\ int,\ int)
+numComments=6
