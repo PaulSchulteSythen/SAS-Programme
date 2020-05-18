@@ -1,0 +1,139 @@
+%% Compile and read me!
+\documentclass[a4paper,12pt]{article}
+\pagestyle{empty}
+\usepackage{color}
+\usepackage{ifxetex}
+\ifxetex\usepackage{fontspec}\setmainfont[Ligatures=TeX]{CMU Serif}
+  \def\Hello{Informatik Aufgaben 05.05.2020}
+\else\usepackage[utf8]{inputenc}\usepackage[T2A]{fontenc}
+  \def\Hello{Welcome! Привет!}
+\fi
+
+
+\begin{document}
+\setlength{\parindent}{0cm}{\Huge \Hello} 
+\bigskip
+
+\section*{b) Schleifen in Java}
+Die while-Schleife ist folgendermaßen aufgebaut:
+\begin{verbatim}
+while(Bedingung){
+    Anweisung 1;
+    Anweisung 2;
+    [...]
+}
+\end{verbatim}
+Wenn der Programmablauf die Schleife erreicht hat, wird zunächst geprüft,
+ob die Bedingung wahr ist. Wenn dem so ist, werden die Anweisungen in
+dem durch die geschweiften Klammern angegebenen Anweisungsblock der
+Reihe nach ausgeführt. Wenn das Ende des Anweisungsblocks erreicht ist,
+wird erneut geprüft, ob die Bedingung wahr ist. Ist sie wahr, läuft die
+Schleife erneut durch, solange, bis die Bedingung falsch ist. Daraufhin wird
+der Anweisungsblock nicht erneut ausgeführt und das Programm wird nach
+der Schleife weiter ausgeführt.
+
+\section*{c)Bearbeitung der Aufgaben}
+\subsection*{Aufgabe 1}
+\begin{verbatim}
+public Grafik() {
+    View view = new View (400,400, "Grafik1");
+    int zaehler = 0;
+    while (zaehler < 3) {
+        Rectangle rechteck = new Rectangle(100, 100, 200, 200, Color.RED);
+        rechteck.turn(zaehler * 30);
+        zaehler = zaehler + 1;
+    }
+}
+\end{verbatim}
+
+\subsection*{Aufgabe 2}
+a)\newline\newline
+\begin{verbatim}
+void zaehler(int obergrenze) {
+    zahl = 1;
+    Text zahlText = new Text(100, 100,"0");
+    while (zahl <= obergrenze){
+        zahlText.setText(""+zahl);
+        zahl = zahl + 1;
+        view.wait(1000);
+    }
+}
+\end{verbatim}
+
+b)\newline
+Die Funktion zaehler erhält als Parameter eine Obergrenze. Dann zählt die
+Funktion von 1 bis zu dieser Obergrenze im 1-Sekunden-Takt, indem bei
+der Position x = 100, y = 100 ein Text mit immer der aktuellen Zahl steht,
+die jede Sekunde durch die nächste Zahl ersetzt wird, bis die Obergrenze
+erreicht ist.
+
+
+\section*{Aufgabe 5}
+\subsection*{a)}
+Zuerst wird mit 
+\begin{verbatim}
+    view = new View(400,400,"Ballon platzt");
+    view.setBackgroundColor(Color.YELLOW);
+\end{verbatim}
+ein 400 x 400 großes Fenster mit gelbem Hintergrund erstellt.\newline
+Dann wird mit 
+\begin{verbatim}
+    peng = new Text(150, 200, "PENG", Color.GREEN);
+    peng.setFontMonospaced(true,40);
+    peng.setHidden(true);
+\end{verbatim}
+ein grüner Schriftzug erstellt, der zunächst unsichtbar gemacht wird.\newline
+Zum Ende des Konstruktors wird dann mit 
+\begin{verbatim}
+    ballon = new Circle(150, 150, 50, Color.RED);
+\end{verbatim}
+ein roter Kreis erzeugt, der an der Position 150, 150 steht und einen Radius von 50.
+
+\subsection*{b)}
+Die erste while-Schleife in der Methode \textit{fuehreAus()} wartet solange eine Sekunde, bis eine Taste gedrückt wurde.
+
+\subsection*{c)}
+\begin{verbatim}
+import sas.*;
+import java.awt.Color;
+class Luftballon {
+    View view;
+    Circle ballon;
+    Text peng;
+    
+    Luftballon() {
+        view = new View(400,400,"Ballon platzt");
+        view.setBackgroundColor(Color.YELLOW);
+        peng = new Text(150, 200, "PENG", Color.GREEN);
+        peng.setFontMonospaced(true,40);
+        peng.setHidden(true);
+        ballon = new Circle(150, 150, 50, Color.RED);
+    }
+    
+    void fuehreAus() {
+        while (!view.keyPressed()){
+            view.wait(1);
+        }
+        while (ballon.getShapeWidth() < 400){
+            ballon.scale(1.05, 1.05);
+            view.wait(100);
+        }
+        view.remove(ballon);
+        peng.setHidden(false);
+    }
+    
+    static void main(){
+        Luftballon ballonSimulation = new Luftballon();
+        ballonSimulation.fuehreAus();
+    }
+}
+\end{verbatim}
+
+
+
+
+
+\end{document}
+
+
+
