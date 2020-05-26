@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Aufgabe1
+comment1.params=
+comment1.target=Aufgabe1()
+comment2.params=zahl1\ zahl2\ zahl3
+comment2.target=int\ maximum(int,\ int,\ int)
+numComments=3
