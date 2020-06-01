@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Breakout
+comment1.params=
+comment1.target=Breakout()
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Breakout\r\n
+comment2.params=richtung
+comment2.target=void\ aendereRichtung(int)
+comment3.params=
+comment3.target=int\ gibHindernisIndex()
+comment4.params=
+comment4.target=void\ fuehreAus()
+comment5.params=
+comment5.target=void\ main()
+numComments=6

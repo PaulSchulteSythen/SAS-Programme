@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Staubsaugerroboter
+comment1.params=
+comment1.target=Staubsaugerroboter()
+comment2.params=
+comment2.target=void\ saugeStaub()
+comment3.params=
+comment3.target=void\ pruefeRand()
+comment4.params=
+comment4.target=void\ fuehreAus()
+comment5.params=
+comment5.target=void\ main()
+numComments=6
